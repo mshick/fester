@@ -15,7 +15,7 @@
     "revisions",
     "file-versioning",
     "cli",
-    "command-line"
+    "command-line",
     "hashing",
     "crypto",
     "hex",
