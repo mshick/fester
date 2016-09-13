@@ -1,7 +1,7 @@
 # Fester
 
-[![npm version](https://badge.fury.io/js/fester-cli.svg)](https://badge.fury.io/js/fester-cli)
-[![Build Status](https://travis-ci.org/mshick/fester-cli.svg?branch=master)](https://travis-ci.org/mshick/fester-cli)
+[![npm version](https://badge.fury.io/js/fester.svg)](https://badge.fury.io/js/fester)
+[![Build Status](https://travis-ci.org/mshick/fester.svg?branch=master)](https://travis-ci.org/mshick/fester)
 
 Create a manifest of files and hashes from a file, directory or glob. Output in json or yml.
 
