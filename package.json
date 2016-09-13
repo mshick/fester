@@ -1,6 +1,6 @@
 {
   "name": "fester",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI to generate a manifest of file paths and hashes in JSON or YAML.",
   "scripts": {
     "test": "eslint fester-cli.js lib && ava __tests__"
