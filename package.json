@@ -5,6 +5,9 @@
   "scripts": {
     "test": "eslint fester-cli.js lib && ava __tests__"
   },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
   "bin": {
     "fester": "fester-cli.js"
   },
