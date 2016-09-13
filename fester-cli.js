@@ -10,7 +10,7 @@ const stdout = require('./lib/stdout');
 
 const cli = meow(`
 	Usage
-		$ fester <filename|glob>
+		$ fester <file1|glob1> [<file2|glob2>...<fileN|globN>] [--output manifest.json]
 		$ find -type f -name '*.png' | xargs fester
 
 	Options
@@ -21,8 +21,8 @@ const cli = meow(`
     -m, --merge      If an existing file is found, merge it     [Default: null]
 
 	Examples
-		$ fester *.png --algorithm=md5 --format json
-		{"file1.png": "1abcb33beeb811dca15f0ac3e47b88d9", "file2.png": "1abcb33beeb811dca15f0ac3e47b88d9"}
+		$ fester *.png --algorithm md5 --format json
+		{"file1.png": "1abcb33beeb811dca15f0ac3e47b88d9", "file2.png": "2bcdb33beeb811dca15f0ac3e47b88d9"}
 `, {
   alias: {
     a: 'algorithm',
