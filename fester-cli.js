@@ -4,6 +4,7 @@
 
 const vfs = require('vinyl-fs');
 const meow = require('meow');
+const touch = require('touch');
 const hasher = require('./lib/hasher');
 const formatter = require('./lib/formatter');
 const stdout = require('./lib/stdout');
@@ -45,7 +46,7 @@ const stream = vfs.src(input)
   .pipe(formatter(cli.flags));
 
 if (cli.flags.output) {
-  stream.pipe(vfs.dest('./'));
+  stream.pipe(vfs.dest('./')).on('finish', () => touch.sync(cli.flags.output));
 } else {
   stream.pipe(stdout());
 }
